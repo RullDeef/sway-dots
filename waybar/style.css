@@ -1,0 +1,73 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: 'Monofur Nerd Font', monospace;
+	font-size: 16px;
+	font-weight: bold;
+	min-height: 0;
+  text-shadow:
+     1px  1px 1px #555,
+     1px -1px 1px #555,
+    -1px -1px 1px #555,
+    -1px  1px 1px #555;
+}
+
+#waybar {
+  background: linear-gradient(120deg,
+    rgb(41, 46, 57) 0,
+    rgb(41, 46, 57) 38px,
+    rgb(46, 52, 64) 40px,
+    rgb(46, 52, 64) calc(38px + 27.71px),
+    rgb(59, 66, 82) calc(40px + 27.71px),
+    rgb(59, 66, 82) calc(38px + 2 * 27.71px),
+    rgb(67, 76, 94) calc(40px + 2 * 27.71px),
+    rgb(67, 76, 94) calc(38px + 3 * 27.71px),
+    rgb(76, 86, 106) calc(40px + 3 * 27.71px),
+    rgb(76, 86, 106) calc(38px + 4 * 27.71px),
+    rgb(80, 96, 120) calc(40px + 4 * 27.71px),
+    rgba(80, 96, 120, 0.6) 15%,
+    rgba(80, 99, 120, 0.6) 75%,
+    rgb(80, 96, 120) calc(100% - 12.0 * 27.71px),
+    rgb(76, 86, 106) calc(100% - 9.2 * 27.71px),
+    rgb(67, 76, 94) calc(100% - 9.2 * 27.71px),
+    rgb(67, 76, 94) calc(100% - 6.9 * 27.71px),
+    rgb(59, 66, 82) calc(100% - 6.9 * 27.71px),
+    rgb(59, 66, 82) calc(100% - 4.6 * 27.71px),
+    rgb(46, 52, 64) calc(100% - 4.6 * 27.71px),
+    rgb(46, 52, 64) calc(100% - 2.3 * 27.71px),
+    rgb(41, 46, 57) calc(100% - 2.3 * 27.71px),
+    rgb(41, 46, 57) 100%);
+	transition-duration: .5s;
+  border-radius: 20px;
+}
+
+#workspaces button {
+	padding: 0 12px;
+	color: #d2d2d2;
+}
+
+#workspaces button.focused {
+	color: #eee;
+}
+
+#workspaces button.focused > label {
+  text-decoration: underline white;
+}
+
+#workspaces button.urgent > label {
+  text-decoration: none;
+}
+
+#mode, #window {
+	color: #eee;
+  text-shadow: 0 0 3px #333;
+}
+
+#tray, #pulseaudio, #network, #backlight, #battery, #clock {
+	padding: 0 12px;
+}
+
+#workspaces button {
+  min-width: 32px;
+  padding: 0;
+}
